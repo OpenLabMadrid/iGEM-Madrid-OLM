@@ -8,4 +8,9 @@ String msg = root["time"][1]["sensor"];
 gps
 
 -------------------------------------------------------------------------
-{"motors":[{},{"speed":100},{},{"speed":50}]}
+{"motors":[{"speed":100,"steps":100},{},{"speed":50}]}
+
+steps define direction in runToPosition()!
+
+{"potentiostat":{"command":"getVariant"}}
+{"potentiostat":{"command":"runTest", "test":"cyclic"}} 
