@@ -1,0 +1,11 @@
+{"sensor":"gps","data":1351824120,"time":
+	["hola",
+		{"sensor":"gps","data":1351824120,"time":
+			["hola","hola"]}]}
+
+String msg = root["time"][1]["sensor"];
+
+gps
+
+-------------------------------------------------------------------------
+{"motors":[{},{"speed":100},{},{"speed":50}]}
