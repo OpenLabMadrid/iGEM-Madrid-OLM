@@ -1,22 +1,42 @@
 #include "iGEM-Madrid-OLM.h"
 
-msgReceiver serial;
-motorHandler motorHandler_(4076,8,9,10,11);
+msgReceiver serial (&Serial);
+msgReceiver serial2 (&Serial2);
+
+motorHandler motorHandler_(8, 10, 9, 11,
+                            4,6,5,7);
 
 void setup() {
-  Serial.begin(9600);
+
+  //PC-Arduino
+  Serial.begin(115200);
+  //Arduino-rodeostat
+  Serial2.begin(115200);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Handle the motors
+  motorHandler_.runMotors(); 
+
 }
 
 void serialEvent() {
-  
- delay(50);
-  
- if (serial.receiver() == ERR_PARS)
+  if (serial.receiver() != 0)
     Serial.println("ERROR:  There was a problem parsing the string");
- 
- serial.understand(motorHandler_);
+
+  serial.understand(motorHandler_);
+
 }
+
+void serialEvent2() {
+  delay(5);
+
+  if (serial2.receiver() != 0)
+    Serial.println("ERROR:  There was a problem receiving rodeostat message");
+
+  String msg = serial2.root[1];
+  serial2.root.printTo(Serial);
+  Serial.println(msg); 
+}
+
