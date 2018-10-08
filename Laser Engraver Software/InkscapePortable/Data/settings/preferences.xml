@@ -418,9 +418,9 @@
        offset="0"
        offsetunits="in" />
     <group
-       id="measure"
+       unit="px"
        fontsize="10"
-       unit="px" />
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -561,11 +561,11 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="2"
+       page="0"
        x="0"
        y="0"
        w="334"
-       h="287"
+       h="286"
        visible="1"
        state="2"
        placement="1" />

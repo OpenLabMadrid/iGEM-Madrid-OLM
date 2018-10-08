@@ -37,24 +37,6 @@ Dependency:
   location: extensions
   string: ps2dxf.sh
 
-Extension "EPS Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: ps2pdf
-
-Extension "LaTeX" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: latex
-
-Extension "LaTeX" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: dvips
-
 Extension "LaTeX" failed to load because a dependency was not met.
 Dependency:
   type: executable
@@ -72,12 +54,6 @@ Dependency:
   type: executable
   location: path
   string: gimp
-
-Extension "PostScript Input" failed to load because a dependency was not met.
-Dependency:
-  type: executable
-  location: path
-  string: ps2pdf
 
 Extension "Sketch Input" failed to load because a dependency was not met.
 Dependency:
