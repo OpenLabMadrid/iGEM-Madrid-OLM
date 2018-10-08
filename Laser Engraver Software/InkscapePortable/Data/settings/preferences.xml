@@ -408,7 +408,7 @@
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
        selcue="1"
-       curvature="3"
+       curvature="0"
        length="100" />
     <eventcontext
        id="paintbucket"
@@ -418,9 +418,9 @@
        offset="0"
        offsetunits="in" />
     <group
-       unit="px"
+       id="measure"
        fontsize="10"
-       id="measure" />
+       unit="px" />
   </group>
   <group
      id="palette">
@@ -555,7 +555,20 @@
     <group
        id="toolbox" />
     <group
-       id="fillstroke" />
+       id="fillstroke"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       page="2"
+       x="0"
+       y="0"
+       w="334"
+       h="287"
+       visible="1"
+       state="2"
+       placement="1" />
     <group
        id="filtereffects" />
     <group
@@ -575,7 +588,7 @@
        h="170"
        visible="1"
        state="2"
-       placement="1" />
+       placement="2" />
     <group
        id="align" />
     <group
@@ -980,10 +993,19 @@
   <group
      id="extensions"
      org.inkscape.input.dxf.encoding="latin_1"
-     org.inkscape.input.dxf.scale="0.125" />
+     org.inkscape.input.dxf.scale="0.125"
+     jtechphotonics.com.travel-speed="200"
+     jtechphotonics.com.laser-speed="30"
+     jtechphotonics.com.laser-power="12000"
+     jtechphotonics.com.power-delay="0"
+     jtechphotonics.com.passes="1"
+     jtechphotonics.com.pass-depth="1"
+     jtechphotonics.com.unit="G21 (All units in mm)"
+     jtechphotonics.com.directory="C:\Users\laupu"
+     jtechphotonics.com.filename="igemmadrid.gcode" />
   <group
      id="desktop"
-     style="">
+     style="stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none">
     <group
        width="640"
        height="480"
