@@ -3,8 +3,14 @@
 msgReceiver serial (&Serial);
 msgReceiver serial2 (&Serial2);
 
-motorHandler motorHandler_(8, 10, 9, 11,
-                            4,6,5,7);
+motorHandler motorHandler_( 38, 42, 40, 44,
+                            46, 50, 48, 52,
+                            47, 51, 49, 53,
+                            18, 20, 19, 21,
+                            22, 26, 24, 28,
+                            30, 34, 32, 36  ,
+                            31, 35, 33, 37,
+                            39, 43, 41, 45);
 
 void setup() {
 
