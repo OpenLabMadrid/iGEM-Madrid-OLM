@@ -1,2 +1,2 @@
 # iGEM-Madrid-OLM
-Here you will find all the codes that the Madrid-OLM team have developed for its project
+Here you will find all the codes & sketches that the Madrid-OLM team has developed for iGEM2018
